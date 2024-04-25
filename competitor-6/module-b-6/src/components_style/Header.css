@@ -1,0 +1,41 @@
+/*STYLES FOR HEADER ONLY*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-items: flex-end;
+
+}
+
+.Demo-link-wrapper{
+    margin-left: auto;
+    display: block;
+
+}
+
+.Demo-link{
+    padding: .5rem .75rem;
+    background-image: linear-gradient(to right, #fc255a, #b53bad, #8249e8);
+    border-radius: 8px;
+    color: #fff;
+}
+
+/*ACTIVE LINK STYLE*/
+.Link-active{
+    padding-bottom: 6px;
+    border-bottom: 1px solid #fc255a;
+}

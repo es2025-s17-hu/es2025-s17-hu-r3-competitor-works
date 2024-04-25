@@ -1,0 +1,34 @@
+
+.Feature--section {
+    padding: 4rem 2rem;
+
+}
+
+.Feature-boxes{
+    padding: 3rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 2.5rem;
+}
+
+.Feature-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.Feature-box .Feature-name{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Feature-box .Feature-description{
+    font-size: 1.25rem;
+}
+
+.Feature-box .Feature-link{
+    font-weight: bold;
+    font-size: 1.125rem;
+}

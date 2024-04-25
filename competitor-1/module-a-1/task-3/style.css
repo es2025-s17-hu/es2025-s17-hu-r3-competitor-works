@@ -1,0 +1,37 @@
+.clock-face {
+  width: 32rem;
+  height: 32rem;
+  border-radius: 999999px;
+  border: 1px black solid;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.clock-hand-hour {
+  width: 0.5rem;
+  height: 8rem;
+  margin-top: 8rem;
+  background-color: black;
+  transform-origin: 50% 100%;
+  position: absolute;
+}
+
+.clock-hand-minute {
+  width: 0.25rem;
+  height: 12rem;
+  margin-top: 4rem;
+  background-color: red;
+  transform-origin: 50% 100%;
+  position: absolute;
+}
+
+.clock-hand-second {
+  width: 0.125rem;
+  height: 14rem;
+  margin-top: 2rem;
+  background-color: blue;
+  transform-origin: 50% 100%;
+  position: absolute;
+}

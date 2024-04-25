@@ -1,0 +1,52 @@
+/* Your code here */
+.boxes {
+  display: grid;
+  grid-template-areas: "A A B" "C C C" "F D D" "F D D" "E E E";
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  background-color: lightgray;
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.A {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+}
+
+.D {
+  grid-area: D;
+}
+
+.E {
+  grid-area: E;
+}
+
+.F {
+  grid-area: F;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes {
+    grid-template-areas: "A B E" "A B F" "A C F" "A C F" "D D D" "D D D";
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .D {
+    margin: 0 calc(100% / 6);
+  }
+}

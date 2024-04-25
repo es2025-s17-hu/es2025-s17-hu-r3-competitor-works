@@ -1,0 +1,557 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar>a.active{
+    text-decoration: underline 3px #ad30ab;
+}
+
+.container, section{
+    padding: 15px 100px;
+
+}
+
+/*header*/
+header{
+    z-index: 10;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s linear;
+}
+header.fixed{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #966ce4;
+    position: fixed;
+    top: 0;
+}
+
+header .navbar.fixed{
+    box-shadow: 0px 10px 0 2px rgba(171, 171, 171, 0.2);
+    height: 30px;
+    width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.book_demo.fixed{
+    border-radius: 50px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 35px;
+    left: 58%;
+}
+.dineease-title{
+    font-weight: 800;
+    -webkit-text-fill-color: #f5265e;
+    background-clip: text;
+}
+
+header>a{
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #f5265e, #8248e5);
+    color: white;
+    border:none;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav>img{
+    margin-right: 25px;
+}
+nav>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+button.book_free{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*1 section*/
+#overview h1{
+    margin-top: 75px;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#overview h2{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#overview button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #f5265e, #8248e5);
+    color: white;
+    border:none;
+}
+
+.phone{
+    position: absolute;
+    z-index: -1;
+    right: 70px;
+    bottom: 10%;
+}
+
+/*Stats section*/
+
+#stats{
+    background: #966ce4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+#stats h3{
+    margin-top: 75px;
+    color: white;
+    font-size: 35px;
+}
+#stats p{
+    color: white;
+}
+#stats .boxs{
+    width: 100%;
+    display: flex;
+}
+#stats .box>.title{
+    font-size: 35px;
+    font-weight: bold;
+}
+#stats>p{
+    margin-top: -25px;
+    margin-bottom: 40px;
+}
+#stats .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #6826d5;
+    border-radius: 5px;
+    width: 25% ;
+    height: 125px;
+    margin-right: 25px;
+}
+
+/*Features section*/
+#features{
+    margin-top:40px;
+    margin-bottom:80px;
+}
+#features>h3{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+
+#features .boxs{
+    display: flex;
+}
+.principal-quote{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+}
+#features .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 125px;
+    margin-right: 25px;
+}
+#features .box>.title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+#features .box>.description{
+    font-size: 15px;
+}
+
+#stats .box>.description{
+    margin-top: -25px;
+    font-size: 15px;
+}
+
+/*testimonal section*/
+
+#testimonials{
+    height: 700px;
+    position: relative;
+    background: #d3f8fa;
+}
+
+
+#testimonials>h3{
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    line-height: 40px;
+}
+.testi-quote{
+    position: absolute;
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+}
+
+#testi-1{
+    top: 20%;
+    right: 20%;
+    width: 500px;
+    position: absolute;
+}
+
+#testi-2{
+    top: 40%;
+    left: 15%;
+    width: 300px;
+    position: absolute;
+}
+#testi-3{
+    top: 50%;
+    right: 34%;
+    width: 300px;
+    position: absolute;
+}
+
+.author{
+    font-weight: bold;
+}
+.role{
+    color: #636a79;
+}
+
+.testimonial{
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.testimonial>p{
+    padding-left: 40px;
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pricing>h3{
+    font-size: 30px;
+}
+
+#pricing>p{
+    margin-top: -5px;
+    font-size: 15px;
+    color: #a1a1b0;
+}
+
+#pricing .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+#pricing button{
+    padding: 10px 15px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #e8e7ea;
+}
+#pricing>.boxs>.box{
+    text-align: center;
+}
+/*Booking*/
+
+#booking{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#booking>h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+#booking span{
+    font-weight: 800;
+    color: #6826d5;
+}
+.form{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.form>button{
+    background: #6826d5;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.user-zone{
+    width: 100%;
+    display: flex;
+ }
+.calendar-zone{
+    width: 40%;
+}
+.time-zone{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.time-zone>button{
+    font-weight: bold;
+    background: #ebe7fc;
+    padding: 12px;
+    border: none;
+    color: #26265b;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.time-zone>button.active{
+    background: #6826d5;
+    color: white;
+}
+input{
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+.booking-zone{
+    width: 100%;
+}
+/*Footer*/
+footer{
+    display: flex;
+    padding: 100px 100px;
+    background: #000000;
+    justify-content: space-between;
+
+}
+
+footer img{
+    margin-bottom: 15px;
+}
+
+footer a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+.copy, .right{
+    color: #d4d8df;
+}
+.left>div{
+    margin-bottom: 20px;
+}
+.img-feature{
+    width: 25px;
+    height: 25px;
+}
+
+.check{
+    color: #17d6bf;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.disable{
+    color: #e9e8eb;
+}
+.title{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.price{
+    font-size: 15px;
+}
+.price-view{
+    font-size: 50px;
+    font-weight: 800;
+}
+#pricing>.boxs{
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+#pricing>.boxs>.box{
+    margin-right: 20px;
+}
+
+.bg-linear{
+    color: white;
+    background: linear-gradient(90deg, #f5265e, #8248e5);
+}
+
+input[type="date"] {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 15px ;
+        text-align: center;
+    }
+    footer{
+        padding: 75px;
+    }
+    footer img{
+        margin-bottom: 15px;
+    }
+    .left>div{
+        margin-bottom: 20px;
+    }
+    header .navbar.fixed{
+        width: 80%;
+    }
+    section{
+        padding: 0;
+        text-align: center;
+    }
+
+    header.fixed>button{
+        display: none;
+    }
+
+    #overview{
+        height: 700px;
+        justify-content: center;
+        text-align: center;
+    }
+    #overview img{
+        bottom: -30%;
+        left: 15%;
+    }
+    h2{
+        text-align: center;
+    }
+    #stats .boxs{
+        display: initial;
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #stats .box{
+        width: 80%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    #features{
+        margin-left: 20px;
+        text-align: left;
+    }
+    #features>h3{
+        margin-bottom: 20px;
+    }
+
+    #features .boxs{
+        display: initial;
+        padding: 20px 100px;
+    }
+
+    #features .box{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .testimonials{
+        margin-top: 50px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonial{
+        align-items: start;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    #booking{
+        padding: 20px;
+    }
+
+    .user-zone{
+        display: inline;
+    }
+    .calendar-zone{
+        width: 100%;
+    }
+    #testimonials{
+        height: 800px;
+        text-align: left;
+    }
+    #testimonials>h3 {
+        margin: 0;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    #testi-1, #testi-2, #testi-3{
+        width: 80%;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    #pricing>.boxs{
+        display: block;
+    }
+    #pricing>.boxs>.box{
+        margin-top: 30px;
+    }
+    .book_demo.fixed{
+        display: none;
+    }
+    .form{
+        margin-left: 0;
+    }
+    .booking-zone{
+        margin-top: 50px;
+    }
+
+    input[type="date"]{
+        width: 90%;
+    }
+}

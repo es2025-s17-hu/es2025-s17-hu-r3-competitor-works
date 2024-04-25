@@ -1,0 +1,18 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Your REST API backend should listen on port 80",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "prisma generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "prisma": "^5.13.0"
+  }
+}

@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.Buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-row: repeat(3, 1fr);
+}

@@ -1,0 +1,51 @@
+:root {
+  --bg-dark-color: #181818;
+  --bg-color: #2f2f2f;
+  --surface-color: #4b4b4b;
+
+  --color-1: #8c336d;
+  --color-2: #444b8c;
+  --color-3: #852647;
+  --color-4: #6265d7;
+  --color-5: #fd7da3;
+  --color-6: #565969;
+
+  --radius: 0.3rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  width: 90%;
+
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+button {
+  background-color: var(--color-1);
+  border: none;
+  border-radius: var(--radius);
+  color: white;
+
+  padding: 0.5rem 1rem;
+}
+
+button:hover,
+.table:hover {
+  filter: saturate(130%);
+}

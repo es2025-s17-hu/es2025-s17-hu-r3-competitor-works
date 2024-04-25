@@ -1,0 +1,44 @@
+/* Your code here */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.boxes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 20px;
+    grid-template-areas:
+            "A A B B E E"
+            "A A B B F F"
+            "A A C C F F"
+            "A A C C F F"
+            ". D D D D ."
+            ". D D D D ."
+;
+}
+
+.A{grid-area: A;}
+.B{grid-area: B;}
+.C{grid-area: C;}
+.D{grid-area: D;}
+.E{grid-area: E;}
+.F{grid-area: F;}
+
+@media screen and (max-width: 768px){
+    .boxes{
+        grid-template-rows: repeat(5, 50px);
+
+        grid-template-areas:
+            "A A A A B B"
+            "C C C C C C"
+            "F F D D D D"
+            "F F D D D D"
+            "E E E E E E"
+    ;
+    }
+}

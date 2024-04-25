@@ -1,0 +1,38 @@
+/* Your code here */
+#clock {
+  width: 500px;
+  height: 500px;
+
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
+}
+
+#hours,
+#minutes,
+#seconds {
+  width: 20px;
+  height: 50%;
+
+  position: absolute;
+  right: calc(50% - 10px);
+  transform-origin: center bottom;
+}
+
+#hours {
+  height: 30%;
+  background-color: red;
+  margin-top: 20%;
+}
+
+#minutes {
+  height: 45%;
+  margin-top: 5%;
+  background-color: black;
+}
+
+#seconds {
+  width: 10px;
+  right: calc(50% - 5px);
+  background-color: white;
+}

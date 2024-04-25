@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button{
+  background: #dadada;
+  color: #000000;
+}
+button.disable{
+  color: #969696;
+}
+
+.categorie_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add_button{
+  padding: 20px;
+  background: lightgray;
+  border-radius: 50%;
+}
+
+.item_row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #ececec;
+}
+
+.popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(199, 198, 198, 0.2);
+}
+
+.popup_content{
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+
+.button_style{
+  background: #9d9c9c;
+}

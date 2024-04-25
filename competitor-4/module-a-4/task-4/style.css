@@ -1,0 +1,64 @@
+/* Your code here */
+.boxes {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-areas:
+    'A A B B E E'
+    'A A B B F F'
+    'A A C C F F'
+    'A A C C F F'
+    'G D D D D H'
+    'G D D D D H'
+;
+    gap: 5px;
+}
+
+.box {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.box::before {
+     content: '';
+     grid-area: G;
+ }
+
+.box::after {
+    content: '';
+    grid-area: H;
+}
+
+.A {
+    grid-area: A;
+}
+.B {
+    grid-area: B;
+}
+.C {
+    grid-area: C;
+}
+.D {
+    grid-area: D;
+}
+.E {
+    grid-area: E;
+}
+.F {
+    grid-area: F;
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        grid-template-areas:
+        'A A B'
+        'C C C'
+        'F D D'
+        'F D D'
+        'E E E'
+    ;
+    }
+}

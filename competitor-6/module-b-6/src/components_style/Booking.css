@@ -1,0 +1,103 @@
+/*DEMO BOOKING SECTION STYLES*/
+
+
+.Booking--section {
+    padding: 2rem;
+}
+
+.Booking-section-title {
+    font-weight: lighter;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.Booking-elements-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.125rem;
+}
+
+.Booking-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Booking-calender {
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.Booking-time-picker{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Booking-time{
+    text-align: center;
+    background-color: #ede9fe;
+    padding: .25rem .5rem;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Booking-time:has(input[type="radio"]:checked){
+    background-color: #7a4df2;
+}
+
+.Booking-time:has(:not(input[type="radio"]:checked)):hover{
+    color: #7a4df2;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.Booking-section-title-highlighted {
+    color: #7a4df2;
+    font-weight: bold;
+}
+
+.Booking-frame-subtitle {
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.Form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: gray;
+}
+
+form input {
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: .35rem .5rem;
+}
+
+.Submit-form {
+    text-align: center;
+    background-color: #7a4df2;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.125rem;
+    padding: .25rem .5rem;
+    cursor: pointer;
+}

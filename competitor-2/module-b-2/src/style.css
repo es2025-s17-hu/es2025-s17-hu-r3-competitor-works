@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #6926d7;
+  --color-primary-light: #976de6;
+  --color-lightblue: #d5fafc;
+
+  --gradient: linear-gradient(90deg, red, var(--color-primary));
+  --radius: 0.3rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.button {
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+}
+
+.button.gradient {
+  color: white;
+  background: var(--gradient);
+}

@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  color: #111827;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Underline in the header */
+nav a {
+  position: relative;
+}
+nav a::before {
+  position: absolute;
+  content: "";
+  left: -4px;
+  width: 0;
+  bottom: -8px;
+  height: 2px;
+  background: linear-gradient(to right, #fc255a, #7f4aec);
+  transition: 0.2s;
+}
+nav a.active::before {
+  width: calc(100% + 8px);
+}
+nav a:hover::before {
+  width: calc(100% + 8px);
+}
+
+/* The radio buttons in the calendar */
+.day-radio {
+  appearance: none;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: 0.15s;
+}
+.day-radio:hover {
+  background-color: #eee;
+}
+.day-radio::before {
+  content: attr(value);
+}
+.day-radio.checked::before {
+  color: white;
+}
+.day-radio.checked {
+  background: linear-gradient(to right, #fc255a, #8d46db);
+}
+
+/* Calendar responsive */
+@media screen and (width <= 768px) {
+  .day-radio {
+    aspect-ratio: unset;
+    height: 40px;
+  }
+}
+
+/* Features section animation */
+.feature {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.feature.animate {
+  animation: feature 0.5s linear;
+  animation-fill-mode: forwards;
+}
+.feature.animate:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.feature.animate:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes feature {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

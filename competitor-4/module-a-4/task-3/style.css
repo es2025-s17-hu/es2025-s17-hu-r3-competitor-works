@@ -1,0 +1,43 @@
+/* Your code here */
+
+.clock {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    border: 10px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.hour {
+    width: 80px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 50%;
+    transform-origin: left center;
+    background-color: black;
+}
+
+.minute {
+    width: 120px;
+    position: absolute;
+    height: 8px;
+    top: calc(50% - 4px);
+    left: 50%;
+    transform-origin: left center;
+    background-color: blue;
+}
+
+.second {
+    width: 160px;
+    position: absolute;
+    height: 6px;
+    top: calc(50% - 3px);
+    left: 50%;
+    transform-origin: left center;
+    background-color: red;
+}

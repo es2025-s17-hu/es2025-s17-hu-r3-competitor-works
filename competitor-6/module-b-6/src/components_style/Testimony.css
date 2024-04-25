@@ -1,0 +1,113 @@
+
+.Testimony--section-wrapper{
+    width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+    background-color: #d5fafc;
+}
+
+.Testimony-section{
+    padding: 2rem;
+    max-width: var(--body-width);
+    margin: 0 auto;
+}
+
+.Testimony-section .Section-title{
+    padding-top: 2rem;
+    position: relative;
+    isolation: isolate;
+
+}
+
+/*INSERTING QUITE ICONS NEXT TO TESTIMONY SECTION TITLE*/
+.Testimony-section .Section-title::before{
+    --quote-title-size: 100px;
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: -15px;
+    background-image: url("../../src/assets/images/quote.png");
+    background-repeat: no-repeat;
+    background-size: var(--quote-title-size);
+    height: var(--quote-title-size);
+    width: var(--quote-title-size);
+    opacity: .75;
+    z-index: -1;
+
+}
+
+.Testimony-boxes{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.Testimony-box{
+    background-color: #fff;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 0 gray;
+}
+
+
+.Testimony-box .Testimony-content{
+    line-height: 1.5;
+
+    position: relative;
+}
+
+/*INSERTING QUITE ICONS NEXT TO TESTIMONY CONTENT*/
+.Testimony-box .Testimony-content::before{
+    --quote-p-size: 15px;
+    content: '';
+    position: absolute;
+    left: -20px;
+    background-image: url("../../src/assets/images/quote.png");
+    background-repeat: no-repeat;
+    background-size: var(--quote-p-size);
+    height: var(--quote-p-size);
+    width: var(--quote-p-size);
+
+}
+
+.Testimony-box .Testimony-author{
+    font-weight: bold;
+}
+
+.Testimony-box .Testimony-author-origin{
+    color: gray;
+}
+
+/*POSITIONING ON THE CORRECT COLUMNS*/
+#TBox-1{
+    grid-column: 4 / 7;
+}
+
+#TBox-2{
+    grid-column: 2 / 4;
+    transform: translateY(-50%);
+}
+
+#TBox-3{
+    grid-column: 4 / 6;
+
+}
+
+@media(max-width: 768px){
+    .Testimony-box{
+        grid-column: span 12!important;
+        grid-row: span 2!important;
+    }
+
+    #TBox-2{
+        transform: translateY(0) !important;
+    }
+
+    .Testimony-boxes{
+        grid-template-rows: repeat(6, 1fr);
+    }
+}

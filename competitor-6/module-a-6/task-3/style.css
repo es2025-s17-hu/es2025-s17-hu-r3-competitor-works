@@ -1,0 +1,44 @@
+/* Your code here */
+
+
+.Clock{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100%;
+    position: relative;
+}
+
+.Hand{
+    position: absolute;
+    width: 100px;
+    height: 3px;
+
+    left: 50%;
+    top: 50%;
+
+    transform-origin: left;
+
+    --starter-deg: -90deg;
+    transform: rotate(-90deg);
+}
+
+.Hour-hand{
+    background-color: purple;
+    width: 75px;
+    height: 3px;
+
+    rotate: 90deg;
+}
+
+.Minute-hand{
+    background-color: orangered;
+    width: 85px;
+    height: 3px;
+
+    rotate: 120deg;
+}
+
+.Second-hand{
+    background-color: red;
+}
